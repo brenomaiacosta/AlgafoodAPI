@@ -1,17 +1,16 @@
-package com.algaworks.algafood.api.controller;
+package com.algaworks.algafood.web.rest;
 
 import com.algaworks.algafood.domain.exception.EntidadeEmUsoException;
 import com.algaworks.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.algaworks.algafood.domain.exception.ExceptionBadRequest;
 import com.algaworks.algafood.domain.model.Restaurante;
-import com.algaworks.algafood.domain.service.CadastroRestauranteService;
+import com.algaworks.algafood.service.CadastroRestauranteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Objects;
 
 @RestController
 @RequiredArgsConstructor

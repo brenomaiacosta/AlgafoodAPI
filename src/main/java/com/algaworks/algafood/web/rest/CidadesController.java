@@ -1,11 +1,10 @@
-package com.algaworks.algafood.api.controller;
+package com.algaworks.algafood.web.rest;
 
 import com.algaworks.algafood.domain.exception.EntidadeEmUsoException;
 import com.algaworks.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.algaworks.algafood.domain.model.Cidade;
-import com.algaworks.algafood.domain.service.CadastroCidadeService;
+import com.algaworks.algafood.service.CadastroCidadeService;
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
