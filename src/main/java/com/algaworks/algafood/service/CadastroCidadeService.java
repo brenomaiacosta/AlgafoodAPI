@@ -31,7 +31,7 @@ public class CadastroCidadeService {
         Cidade cidade = cidadeRepository.buscar(id);
         if (Objects.isNull(cidade)) {
             throw new EntidadeNaoEncontradaException(
-                    String.format(Mensagens.MSGE001, "Cidades", id));
+                    String.format(Mensagens.MSGE001, "Cidade", id));
         }
         return cidade;
     }
